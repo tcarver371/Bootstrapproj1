@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Bootstrap 4 Layout</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <!--Container - Makes everything within it align in the center of the page. Also puts it all into a box/container. which i'd say is roughly.. 60%? of the website size. -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">CompanyName</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               <!--Makes it to where the navbar is collapsable. --> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Creates the navbar, and sets the margin-left to auto-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!--Creates a dropdown list within the list. It's essentially a dropdown within a dropdown -->
+                    <li class="nav-item-dropdown">
+                        <!--Toggles the dropdownmenu when you click the link-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Products</a>
+                        <!--Creates the dropdown menu -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Product 1</a>
+                            <a class="dropdown-item" href="#">Product 2</a>
+                            <!--Adds a divider between the 2nd and 3rd items in this menu-->
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Product 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Creates a huge area called a jumbotron which sticks out from the rest-->
+        <div class="jumbotron">
+            <!--Chooses the type of display for the h1 element.-->
+            <h1 class="display-4">Simple, Elegant, Awseome</h1>
+            <p class="lead">Lorem Ipsum Sample text just to see how it works</p>
+
+            <p class="lead">
+                <a class="btn btn-primary btn-lg">Learn More</a>
+            </p>
+        </div>
+
+        <!--Creates the grid system. It gets divided into 1 row and a few columns. -->
+        <div class="row">
+            <!--Creates 3 columns that take up equal space along the page.(4 blocks each)
+                When the width gets small however, this first column expands to take up and entire space by itself, and forces the other two below it.
+            -->
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick text to build up on the card title</p>
+                        <a href="#" class="card-link">Another Link</a>
+                    </div>
+                </div>
+            </div>
+            <!--Creates another column within the row.-->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick text to build up on the card title</p>
+                        <a href="#" class="card-link">Another Link</a>
+                    </div>
+                </div>
+            </div>
+            <!--Creates another column within the row.-->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick text to build up on the card title</p>
+                        <a href="#" class="card-link">Another Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Creates yet another row. This one going beneath the cards that were just created above
+            Also sets the margin-top for for the row to 4 when the screen is small, and 0 when the screen is medium
+        -->
+        <div class="row mt-sm-4 mt-md-0">
+            <div class="col-sm-12 col-md-8">
+                <h3>An important heading</h3>
+                <p class="lead">filler text for the element</p>
+
+                <p>Lorem ipsum dolor sit met, la di da di da did dad did aifasd ds asd sd</p>
+            </div>
+            <!--Creates a column, which when the screen is small takes up an entire block by itself, but when the screen is medium sized, it takes up only a third of the screen./-->
+            <div class="col-sm-12 col-md-4">
+                <!--Sets the margin-bottom to 4-->
+                <h3 class="mb-4">Secondary Menu</h3>
+
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
